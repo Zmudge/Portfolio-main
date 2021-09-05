@@ -134,10 +134,9 @@ h3 {
     padding: .25em 1em;
 }
 
-.section--subtitle-work {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 2em;
+.sub-text {
+    font-size: 15px;
+    font-weight: var(--fw-reg);
 }
 
 /*HEADER*/
@@ -362,50 +361,50 @@ header {
     }
 }
 
-/* MY WORK */
+/* PROJECTS */
 
-.my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+.my-projects {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.portfolio {
-    display: grid;
     justify-content: space-between;
-    max-width: 400px;
-    margin: 0;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40vh 30vh 30vh;
-    grid-gap: 10px;
-    padding: 0.5rem;
-    
-}
-
-.portfolio__item {
+    text-align: center;
+    padding: 100px;
     background: var(--clr-accent);
-    overflow: hidden;
-    height: 310px;
 }
 
-.portfolio__img {
-    transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
-        grid-area: photo;
-    height: 310px;
+.project-container {
+    display: flex;
+    justify-content: space-around;
 }
 
-.portfolio__item:focus {
-    position: relative;
-    z-index: 2;
+.project-card {
+    width: 300px;
+    height: 450px;
+    justify-content: space-between;
+    margin: 10px;
 }
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .75;
+
+.section__title--projects {
+    padding: 4rem;
+    margin: 4rem;
+}
+
+.project-image {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--clr-dark)
 }
 /*CONTACT FORM*/
 
