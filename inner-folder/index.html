@@ -79,7 +79,7 @@
                      eum consequatur nemo! Nemo blanditiis repellendus saepe.</p>
                 </div>
             </div> 
-            <a href="#projects" class="btn">My Work</a>
+            
         </section>
     <!--END SERVICES-->
 
@@ -103,15 +103,30 @@
                     </a>
     <!--PORTFOLIO ITEM 4-->
                     <a href="#" class="portfolio__item">
-                        <img src="image/vanc" alt="code" class="portfolio__img">
+                        <img src="image/homeoffice.jpg" alt="code" class="portfolio__img">
                     </a>
+                    <a href="#projects" class="btn">My Work</a>
                 </div>    
         </section>
- 
+    <!--ALERT MESSAGE
+        <div class="alert-success">
+            <span>Message Sent, I'll get back to you ASAP.</span>
+        </div>
+        <div class="alert-error">
+            <span>Something went wrong! Please try again</span>
+        </div>-->
+
     <!--CONTACT-->
-    <section class="contacts" id="contact">
-            <h2 class="section__title">Contact</h2>
-            <p class="section__subtitle"></p>    
+    <section class="contacts" id="contacts">
+       <div class="contact-form">
+           <h2 class="contact-title">Contact Us</h2>
+           <form class="contact" action="" method="POST">
+               <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+               <input type="email" name="email" class="text-box" placeholder="Email" required>
+               <textarea name="message" rows="5" class="text-box" placeholder="Your Message" required></textarea>
+               <input type="submit" name="submit" class="send-btn" value="Send">
+           </form>
+       </div>
     </section>    
         
     <!--FOOTER/SOCIALS-->
