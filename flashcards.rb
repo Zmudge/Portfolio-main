@@ -1,6 +1,6 @@
-p "Flash Card Game"
-questions=['2+2=', 'Who is the founder of Apple']
-solution ['4', 'Steve Jobs']
+p "Flash Cards"
+questions = ['2+2', 'Whos the son of darth vader?', 'Who is the founder of Apple?']
+solution = ['4', 'Luke Skywalker', 'Steve Jobs']
 
 #a Variable that stores the length of total quesstions in the array 
 len_num = questions.length()
@@ -15,9 +15,8 @@ class FlashCard
     attr_accessor :arr1, :arr2
 
     def initialize(array1, array2)
-
-        @arr1 = array1
-        @arr2 = array2
+        @arr1 = array1;
+        @arr2 = array2;
     end
     
     def to_s
@@ -31,7 +30,7 @@ while x <= 9
     random_num = rand(len_num) -1
     p "You got #{correct} correct and #{wrong} wrong"
 
-    game = FlashCard.new(questions,soloution)
+    game = FlashCard.new(questions,solution)
     p "#{game.arr1[random_num]} ?"
 
     answer = gets.chomp.to_s
@@ -40,10 +39,10 @@ while x <= 9
 
     p "Correct"
 
-    correct +=1
+    correct += 1
 
     else "Wrong" 
-        wrong +=1
+        wrong += 1
    
     end
     #increment in x variable to break loop
