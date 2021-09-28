@@ -19,4 +19,25 @@ class FlashCard
     def to_s
         p "what is the sum of #{@num1} + #{@num2}"
     end
-end        
+end
+
+#a while loop that runs 10 times
+while x <= 9
+
+    game = FlashCard.new(array_num.sample,array_num.sample)
+
+    p "What is the sum of #{game.num1} + #{game.num2} ?"
+
+    answer = gets.chomp.to.i
+#
+    if answer == (game.num1 + game.num2)
+        p "Correct"
+        correct += 1
+    else
+        p "Wrong"
+        wrong += 1
+    end
+    
+    x += 1 
+end
+p "You got #{correct} correct and #{wrong} wrong"     
